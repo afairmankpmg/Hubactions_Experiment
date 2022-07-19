@@ -1,1 +1,21 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://artifactory.us.kworld.kpmg.com/artifactory/ICRM'
+            credentials {
+                username = "${mavenUser}"
+                password = "${mavenPass}"
+            }
+        }
+        maven {
+            url 'https://artifactory.us.kworld.kpmg.com/artifactory/repo1'
+        }
+        maven {
+            url 'https://artifactory.us.kworld.kpmg.com/artifactory/jcenter'
+        }
+    }
+}
+
 rootProject.name = 'githubactionsdemo'
+include ':api'
+include ':service'

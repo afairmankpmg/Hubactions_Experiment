@@ -1,0 +1,10 @@
+janus{
+    archive{
+        bootable true
+    }
+}
+dependencies {
+    implementation(project(":api"))
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('com.kpmg.janus:core-spring-boot-starter')
+}

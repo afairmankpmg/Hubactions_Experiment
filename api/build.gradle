@@ -1,0 +1,3 @@
+dependencies {
+    api('com.kpmg.janus:core-api-starter')
+}
